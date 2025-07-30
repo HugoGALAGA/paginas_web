@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #42c8f5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    cursor: default;
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#kirby-chaser {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    background-image: url('kirby-sprite-sheet.png');
+    background-repeat: no-repeat;
+    animation: walk-cycle 0.8s steps(8) infinite;
+    transform: scale(2);
+    image-rendering: pixelated;
+}
+
+@keyframes walk-cycle {
+  from {
+    background-position: 0px -363px;
+  }
+  to {
+    background-position: -576px -363px;
+  }
+}
