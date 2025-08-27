@@ -132,3 +132,11 @@ main {
         grid-gap: 20px;
     }
 }
+/* --- Commit 8: Media Query para Desktop --- */
+
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        max-width: 1200px; /* Un ancho máximo para que no se estire demasiado */
+    }
+}
