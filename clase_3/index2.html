@@ -2,116 +2,118 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <META name="viewport" content="width=device-width, initial-scale=1" />
+    <META name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Mi CV - Hugo Galina </title>
     <link rel="shortcut icon" href="IMG/universidad.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Nombre Apellido</h1>
-        <p>Desarrollador Web | Tu Profesión</p>
-        <img src="IMG/image.png" alt="Foto de Hugo Galina" width="200" />
-    </header>
+    <div class="container">
+        <header>
+            <h1>Nombre Apellido</h1>
+            <p>Desarrollador Web | Tu Profesión</p>
+            <img src="IMG/image.png" alt="Foto de Hugo Galina" width="200" />
+        </header>
 
-    <nav>
-        <!-- enlaces -->
-        <ul>
-            <li><a href="mailto:hugogalina@ufm.edu">Correo electronico</a></li>
-            <li><a href="https://github.com/HugoGALAGA/paginas_web" target="_blank" rel="noopener noreferrer">Github</a></li>
-            <li><a href="#">Linkedin (pendiente)</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <!-- enlaces -->
+            <ul>
+                <li><a href="mailto:hugogalina@ufm.edu">Correo electronico</a></li>
+                <li><a href="https://github.com/HugoGALAGA/paginas_web" target="_blank" rel="noopener noreferrer">Github</a></li>
+                <li><a href="#">Linkedin (pendiente)</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <section>
-            <h2>Sobre mí</h2>
-            <p>Un párrafo breve describiéndote.</p>
-        </section>
+        <main>
+            <section>
+                <h2>Sobre mí</h2>
+                <p>Un párrafo breve describiéndote.</p>
+            </section>
 
-        <section>
-             <h2>Experiencia</h2>
+            <section>
+                <h2>Experiencia</h2>
 
-             <h3>Lista ordenada</h3>
-             <ol>
-                <li>Bash</li>
-                <li>Diseñador</li>
-                <li>Practicante fede basket (2023)</li>
-             </ol>
+                <h3>Lista ordenada</h3>
+                <ol>
+                    <li>Bash</li>
+                    <li>Diseñador</li>
+                    <li>Practicante fede basket (2023)</li>
+                </ol>
 
-             <h3>Lista desordenada</h3>
-             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-             </ul>
+                <h3>Lista desordenada</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
 
-             <h3>Lista de definición</h3>
-             <dl>
-                <dt>JavaScript</dt>
-                <dd>Lenguaje de programación para desarrollo web frontend y backend.</dd>
-                <dt>CSS</dt>
-                <dd>Hojas de estilo para diseño y maquetación de páginas web.</dd>
-                <dt>Git</dt>
-                <dd>Sistema de control de versiones para gestionar código.</dd>
-             </dl>
-        </section>
+                <h3>Lista de definición</h3>
+                <dl>
+                    <dt>JavaScript</dt>
+                    <dd>Lenguaje de programación para desarrollo web frontend y backend.</dd>
+                    <dt>CSS</dt>
+                    <dd>Hojas de estilo para diseño y maquetación de páginas web.</dd>
+                    <dt>Git</dt>
+                    <dd>Sistema de control de versiones para gestionar código.</dd>
+                </dl>
+            </section>
 
-        <section id="educacion">
-            <h2>Educación</h2>
-            <table>
-                <caption>Tabla de educación: estudios realizados</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Año</th>
-                        <th scope="col">Institución</th>
-                        <th scope="col">Título obtenido</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2020</td>
-                        <td>Universidad del Futuro</td>
-                        <td>Licenciatura en Ingeniería Informática</td>
-                    </tr>
-                    <tr>
-                        <td>2023</td>
-                        <td>Escuela de Tecnología Avanzada</td>
-                        <td>Diplomado en Desarrollo Web</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+            <section id="educacion">
+                <h2>Educación</h2>
+                <table>
+                    <caption>Tabla de educación: estudios realizados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Año</th>
+                            <th scope="col">Institución</th>
+                            <th scope="col">Título obtenido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020</td>
+                            <td>Universidad del Futuro</td>
+                            <td>Licenciatura en Ingeniería Informática</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Escuela de Tecnología Avanzada</td>
+                            <td>Diplomado en Desarrollo Web</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        <section id="experiencia">
-            <h2>Experiencia Laboral</h2>
-            <table>
-                <caption>Tabla de experiencia laboral: empleos y periodos</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Periodo</th>
-                        <th scope="col">Empresa</th>
-                        <th scope="col">Puesto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2021 - 2022</td>
-                        <td>Tech Solutions</td>
-                        <td>Desarrollador Frontend</td>
-                    </tr>
-                    <tr>
-                        <td>2023 - 2024</td>
-                        <td>Innovatech</td>
-                        <td>Ingeniero Full Stack</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+            <section id="experiencia">
+                <h2>Experiencia Laboral</h2>
+                <table>
+                    <caption>Tabla de experiencia laboral: empleos y periodos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Periodo</th>
+                            <th scope="col">Empresa</th>
+                            <th scope="col">Puesto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021 - 2022</td>
+                            <td>Tech Solutions</td>
+                            <td>Desarrollador Frontend</td>
+                        </tr>
+                        <tr>
+                            <td>2023 - 2024</td>
+                            <td>Innovatech</td>
+                            <td>Ingeniero Full Stack</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
 
-    <footer>
-        <p>© 2025 Hugo Galina</p>
-    </footer>
-
+        <footer>
+            <p>© 2025 Hugo Galina</p>
+        </footer>
+    </div>
 </body>
 </html>
