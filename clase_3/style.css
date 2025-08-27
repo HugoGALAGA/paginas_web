@@ -122,3 +122,13 @@ main {
 .container {
     width: 90%; /* Más ancho en pantallas pequeñas */
 }
+/* --- Commit 7: Media Query para Tablet --- */
+
+@media (min-width: 768px) {
+    /* Reactivamos Grid a partir de 768px de ancho */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+    }
+}
