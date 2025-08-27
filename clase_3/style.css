@@ -28,9 +28,18 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 1rem 20px; /* Añadimos padding lateral */
     border-bottom: #0779e4 3px solid;
+    
+    /* Aplicamos Flexbox */
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Creamos un div para el texto del header para agruparlo */
+header .header-text {
+    text-align: left;
 }
 
 header h1 {
