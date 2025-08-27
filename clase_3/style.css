@@ -55,3 +55,44 @@ footer {
     color: #fff;
     margin-top: 20px;
 }
+/* --- Commit 3: Estilos de elementos específicos --- */
+
+nav ul {
+    padding: 0;
+    list-style: none; /* Quita los puntos de la lista */
+    text-align: center;
+    background: #444;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Pone los elementos en línea */
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #0779e4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes de la tabla */
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+thead {
+    background-color: #0779e4;
+    color: white;
+}
