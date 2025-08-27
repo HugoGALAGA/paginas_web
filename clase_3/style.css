@@ -112,3 +112,13 @@ main {
     grid-gap: 20px; /* Espacio entre las columnas */
     padding: 20px 0;
 }
+/* --- Commit 6: Estilos base para Móvil (Mobile First) --- */
+
+/* Por defecto, main es una sola columna */
+main {
+    display: block; /* Anulamos el Grid para móviles */
+}
+
+.container {
+    width: 90%; /* Más ancho en pantallas pequeñas */
+}
