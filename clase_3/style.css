@@ -89,24 +89,6 @@ nav ul li a:hover {
     background: #0779e4;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse; /* Une los bordes de la tabla */
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-thead {
-    background-color: #0779e4;
-    color: white;
-}
-
-
 .container {
     width: 90%; /* Más ancho en pantallas pequeñas */
 }
