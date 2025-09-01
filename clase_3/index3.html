@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini MP3</title>
+  <style>
+    .mini-player {
+      width: 250px;
+      padding: 10px;
+      background: #222;
+      color: #fff;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      font-family: Arial, sans-serif;
+    }
+
+    .mini-player h4 {
+      margin: 5px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="mini-player">
+    <h4>🎵 Música de fondo</h4>
+    <audio controls>
+      <source src="musica.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5.
+    </audio>
+  </div>
+</body>
+</html>
