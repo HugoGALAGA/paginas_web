@@ -105,33 +105,12 @@ thead {
     background-color: #0779e4;
     color: white;
 }
-/* --- Commit 5: Uso de Grid en Main --- */
-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Una columna de 1 fracción, la otra del doble */
-    grid-gap: 20px; /* Espacio entre las columnas */
-    padding: 20px 0;
-}
-/* --- Commit 6: Estilos base para Móvil (Mobile First) --- */
 
-/* Por defecto, main es una sola columna */
-main {
-    display: block; /* Anulamos el Grid para móviles */
-}
 
 .container {
     width: 90%; /* Más ancho en pantallas pequeñas */
 }
-/* --- Commit 7: Media Query para Tablet --- */
 
-@media (min-width: 768px) {
-    /* Reactivamos Grid a partir de 768px de ancho */
-    main {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-gap: 20px;
-    }
-}
 /* --- Commit 8: Media Query para Desktop --- */
 
 @media (min-width: 1024px) {
