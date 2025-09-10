@@ -9,3 +9,16 @@ if (horaActual >= 5 && horaActual < 12) {
 } else {
     saludoElemento.textContent = 'Buenas noches, soy Hugo Galina';
 }
+
+// Ejercicio 2: Botón para mostrar/ocultar experiencia
+const toggleExperienciaBtn = document.getElementById('toggle-experiencia-btn');
+const experienciaContainer = document.getElementById('experiencia-container');
+
+toggleExperienciaBtn.addEventListener('click', () => {
+    // Toggle (añade/quita) la clase 'd-none' de Bootstrap
+    experienciaContainer.classList.toggle('d-none');
+
+    // Cambia el texto del botón
+    const isHidden = experienciaContainer.classList.contains('d-none');
+    toggleExperienciaBtn.textContent = isHidden ? 'Mostrar Experiencia' : 'Ocultar Experiencia';
+});
