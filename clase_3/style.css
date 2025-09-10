@@ -101,3 +101,37 @@ nav ul li a:hover {
         max-width: 1200px; /* Un ancho máximo para que no se estire demasiado */
     }
 }
+
+/* Estilos para el Modo Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-bottom-color: #0d6efd; /* Un azul de Bootstrap */
+}
+
+body.dark-mode nav ul {
+    background-color: #333;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e !important; /* !important para sobreescribir Bootstrap */
+}
+
+body.dark-mode table {
+    color: #e0e0e0;
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: rgba(255, 255, 255, 0.05); /* Sobreescribe el color de las filas */
+}

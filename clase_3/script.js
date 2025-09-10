@@ -22,3 +22,13 @@ toggleExperienciaBtn.addEventListener('click', () => {
     const isHidden = experienciaContainer.classList.contains('d-none');
     toggleExperienciaBtn.textContent = isHidden ? 'Mostrar Experiencia' : 'Ocultar Experiencia';
 });
+
+// Ejercicio 3: Implementar modo oscuro/claro
+const toggleThemeBtn = document.getElementById('toggle-theme-btn');
+
+toggleThemeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    toggleThemeBtn.textContent = isDarkMode ? 'Modo Claro' : 'Modo Oscuro';
+});
