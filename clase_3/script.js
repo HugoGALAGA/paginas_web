@@ -32,3 +32,13 @@ toggleThemeBtn.addEventListener('click', () => {
     const isDarkMode = document.body.classList.contains('dark-mode');
     toggleThemeBtn.textContent = isDarkMode ? 'Modo Claro' : 'Modo Oscuro';
 });
+
+// Ejercicio 4: Botón para mostrar/ocultar información de contacto
+const toggleContactBtn = document.getElementById('toggle-contact-btn');
+const contactInfo = document.getElementById('contact-info');
+
+toggleContactBtn.addEventListener('click', () => {
+    contactInfo.classList.toggle('d-none');
+    const isHidden = contactInfo.classList.contains('d-none');
+    toggleContactBtn.textContent = isHidden ? 'Mostrar Contacto' : 'Ocultar Contacto';
+});
