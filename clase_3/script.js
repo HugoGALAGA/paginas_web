@@ -42,3 +42,23 @@ toggleContactBtn.addEventListener('click', () => {
     const isHidden = contactInfo.classList.contains('d-none');
     toggleContactBtn.textContent = isHidden ? 'Mostrar Contacto' : 'Ocultar Contacto';
 });
+
+// Ejercicio 5: Buscador de habilidades
+const skillSearchInput = document.getElementById('skill-search');
+const skillsList = document.getElementById('skills-list').getElementsByTagName('li');
+
+skillSearchInput.addEventListener('input', (event) => {
+    const searchTerm = event.target.value.toLowerCase();
+
+    // Itera sobre cada elemento <li> de la lista
+    for (let i = 0; i < skillsList.length; i++) {
+        const skill = skillsList[i];
+        const skillText = skill.textContent.toLowerCase();
+
+        if (skillText.includes(searchTerm)) {
+            skill.style.display = ''; // Muestra el elemento si coincide
+        } else {
+            skill.style.display = 'none'; // Oculta el elemento si no coincide
+        }
+    }
+});
