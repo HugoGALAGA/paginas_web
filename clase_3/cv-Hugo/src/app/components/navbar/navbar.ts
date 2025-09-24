@@ -1,11 +1,24 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './navbar.html',
-  styleUrl: './navbar.css'
+  styleUrls: ['./navbar.css']
 })
-export class Navbar {
+export class NavbarComponent {
 
+  public isDarkMode: boolean = false;
+  public isContactVisible: boolean = true;
+
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode; 
+    document.body.classList.toggle('dark-mode', this.isDarkMode);
+  }
+
+  toggleContact(): void {
+    this.isContactVisible = !this.isContactVisible;
+  }
 }

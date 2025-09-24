@@ -1,11 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  imports: [],
   templateUrl: './header.html',
-  styleUrl: './header.css'
+  styleUrls: ['./header.css']
 })
-export class Header {
+export class HeaderComponent implements OnInit {
 
+  public saludo: string = '';
+
+  constructor() { }
+
+  ngOnInit(): void {
+    const horaActual = new Date().getHours();
+
+    if (horaActual >= 5 && horaActual < 12) {
+      this.saludo = 'Buenos días, soy Hugo Galina';
+    } else if (horaActual >= 12 && horaActual < 19) {
+      this.saludo = 'Buenas tardes, soy Hugo Galina';
+    } else {
+      this.saludo = 'Buenas noches, soy Hugo Galina';
+    }
+  }
 }
