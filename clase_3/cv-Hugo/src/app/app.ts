@@ -1,22 +1,20 @@
-// En: src/app/app.ts
-
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // <-- ¡IMPORTANTE! Para *ngIf y *ngFor
+import { CommonModule } from '@angular/common'; 
 
-// Importa TODOS los componentes que vas a usar
 import { HeaderComponent } from './components/header/header';
 import { NavbarComponent } from './components/navbar/navbar';
 import { AboutMe } from './components/about-me/about-me';
 import { SkillsComponent } from './components/skills/skills';
 import { Experience } from './components/experience/experience';
 import { Footer } from './components/footer/footer';
+import { RouterModule } from '@angular/router'; 
 
 @Component({
   selector: 'app-root',
-  standalone: true, // Asegúrate de que esta línea esté
-  // Añade la propiedad 'imports' y lista todo aquí
+  standalone: true, 
   imports: [
     CommonModule,
+    RouterModule,
     HeaderComponent,
     NavbarComponent,
     AboutMe,

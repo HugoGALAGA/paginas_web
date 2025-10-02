@@ -1,24 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
+import { DataService } from '../../services/data'; 
 
 @Component({
   selector: 'app-skills',
-   standalone: true,
-  imports: [CommonModule],
+  standalone: true,
+  imports: [CommonModule], 
   templateUrl: './skills.html',
   styleUrls: ['./skills.css']
 })
-export class SkillsComponent {
-
-  private allSkills: string[] = ['HTML5', 'CSS3', 'JavaScript', 'Bash', 'Git'];
+export class SkillsComponent implements OnInit {
   
-  public filteredSkills: string[] = [...this.allSkills];
+  public skills: string[] = [];
 
-  filterSkills(event: any): void {
-    const searchTerm = event.target.value.toLowerCase();
-    
-    this.filteredSkills = this.allSkills.filter(skill => 
-      skill.toLowerCase().includes(searchTerm)
-    );
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    this.skills = this.dataService.getSkills();
   }
 }

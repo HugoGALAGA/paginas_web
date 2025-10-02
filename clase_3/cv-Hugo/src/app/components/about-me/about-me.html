@@ -1,6 +1,13 @@
 <section class="card">
     <div class="card-body">
         <h2 class="card-title">Sobre mí</h2>
-        <p class="card-text">Un parrafo de descripcion</p>
+        <p class="card-text">Un parrafo de descripcion.</p>
+
+        <p><strong>Nombre en mayúsculas:</strong> {{ myName | uppercase }}</p>
+
+        <p><strong>Fecha de hoy:</strong> {{ today | date:'fullDate' }}</p>
+
+        <p><strong>Mi nombre al revés:</strong> {{ 'Hugo' | reverse }}</p>
+
     </div>
-</section>
+</section> 

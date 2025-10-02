@@ -1,39 +1,15 @@
-<div id="experiencia-container" class="main-content">
-    <section>
-        <h2>Experiencia</h2>
-        <h3>Lista ordenada</h3>
-        <ol>
-            <li>Bash</li>
-            <li>Diseñador</li>
-            <li>Practicante fede basket (2023)</li>
-        </ol>
-        <h3>Lista de definición</h3>
-        <dl>
-            <dt>JavaScript</dt>
-            <dd>Lenguaje de programación...</dd>
-            <dt>CSS</dt>
-            <dd>Hojas de estilo...</dd>
-            <dt>Git</dt>
-            <dd>Sistema de control de versiones...</dd>
-        </dl>
-    </section>
-    <section id="educacion">
-        <h2>Educación</h2>
-        <table class="table table-striped table-hover">
-            <thead>
-                <tr>
-                    <th>Institución</th>
-                    <th>Título</th>
-                    <th>Año</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Universidad Francisco Marroquín</td>
-                    <td>Ingeniería en Ciencias de la Computación</td>
-                    <td>2021 - Presente</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+
+<div class="main-content">
+  <section>
+    <h2>Mi Experiencia Profesional y Académica</h2>
+    <p>Navega entre las secciones para ver más detalles sobre mis trabajos y estudios.</p>
+    
+    <nav class="nav nav-pills nav-fill mb-4">
+      <a class="nav-link" routerLink="jobs" routerLinkActive="active">Trabajos</a>
+      <a class="nav-link" routerLink="studies" routerLinkActive="active">Estudios</a>
+    </nav>
+    
+    <router-outlet></router-outlet>
+    
+  </section>
 </div>
