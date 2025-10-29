@@ -1,0 +1,15 @@
+<section>
+    <h2>Habilidades</h2>
+    <input 
+      type="text" 
+      class="form-control mb-3" 
+      placeholder="Buscar habilidad..."
+      (input)="filterSkills($event)"
+    >
+    <h3>Lista desordenada</h3>
+    <ul id="skills-list">
+        <li *ngFor="let skill of filteredSkills">
+          {{ skill }}
+        </li>
+    </ul>
+</section>

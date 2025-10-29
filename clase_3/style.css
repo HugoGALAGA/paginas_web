@@ -1,0 +1,137 @@
+/* style.css */
+
+/* --- Commit 1: Estilos Globales y Tipografía --- */
+
+/* Importar una fuente de Google Fonts (opcional, pero se ve bien) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Estilos para todo el cuerpo del documento */
+body {
+    font-family: 'Lato', sans-serif; /* Fuente consistente */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #d8dad9; /* Color de fondo suave */
+    color: #333; /* Color de texto principal */
+}
+
+/* Contenedor principal para centrar el contenido */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* --- Commit 2: Estilos de secciones principales --- */
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 20px; /* Añadimos padding lateral */
+    border-bottom: #0779e4 3px solid;
+    
+    /* Aplicamos Flexbox */
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Creamos un div para el texto del header para agruparlo */
+header .header-text {
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+/* --- Commit 3: Estilos de elementos específicos --- */
+
+nav ul {
+    padding: 0;
+    list-style: none; /* Quita los puntos de la lista */
+    text-align: center;
+    background: #444;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline; /* Pone los elementos en línea */
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #0779e4;
+}
+
+.container {
+    width: 90%; /* Más ancho en pantallas pequeñas */
+}
+
+/* --- Commit 8: Media Query para Desktop --- */
+
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        max-width: 1200px; /* Un ancho máximo para que no se estire demasiado */
+    }
+}
+
+/* Estilos para el Modo Oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-bottom-color: #0d6efd; /* Un azul de Bootstrap */
+}
+
+body.dark-mode nav ul {
+    background-color: #333;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e !important; /* !important para sobreescribir Bootstrap */
+}
+
+body.dark-mode table {
+    color: hsl(0, 0%, 88%);
+}
+
+body.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: rgba(255, 255, 255, 0.05); /* Sobreescribe el color de las filas */
+}

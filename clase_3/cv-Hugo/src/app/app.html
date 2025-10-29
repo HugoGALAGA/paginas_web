@@ -1,0 +1,22 @@
+<div class="container">
+  <app-header></app-header>
+  
+  <app-navbar></app-navbar>
+
+  <main class="row">
+      <aside class="col-md-4">
+          <button (click)="toggleExperienceVisibility()" class="btn btn-primary w-100 mb-3">
+            {{ isExperienceVisible ? 'Ocultar Experiencia' : 'Mostrar Experiencia' }}
+          </button>
+          
+          <app-about-me></app-about-me>
+          <app-skills></app-skills>
+      </aside>
+
+      <div class="col-md-8">
+          <app-experience *ngIf="isExperienceVisible"></app-experience>
+      </div>
+  </main>
+</div>
+
+<app-footer></app-footer>

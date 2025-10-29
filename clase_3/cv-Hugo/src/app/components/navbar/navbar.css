@@ -1,0 +1,23 @@
+ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background: #444;
+    margin: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a, li button {
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: none; 
+}
+
+li a:hover, li button:hover {
+    background: #0779e4;
+}

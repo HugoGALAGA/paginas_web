@@ -1,0 +1,17 @@
+<button (click)="toggleContact()" class="btn btn-info w-100 mt-3 mb-1">
+  {{ isContactVisible ? 'Ocultar Contacto' : 'Mostrar Contacto' }}
+</button>
+
+<nav id="contact-info" *ngIf="isContactVisible">
+    <ul>
+        <li><a href="mailto:hugogalina@ufm.edu">Correo electronico</a></li>
+        <li><a href="https://github.com/HugoGALAGA/paginas_web" target="_blank" rel="noopener noreferrer">Github</a></li>
+        <li><a href="#">Linkedin (pendiente)</a></li>
+        <li><a href="#" class="btn btn-success btn-sm">Descargar CV en PDF</a></li>
+        <li>
+          <button (click)="toggleTheme()" class="btn btn-secondary btn-sm">
+            {{ isDarkMode ? 'Modo Claro' : 'Modo Oscuro' }}
+          </button>
+        </li>
+    </ul>
+</nav>

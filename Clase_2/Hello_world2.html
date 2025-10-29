@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World Graffiti Pro Fix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapper {
+      isolation: isolate; /* <- mejora el renderizado del degradado */
+    }
+
+    h1 {
+      font-size: 6rem;
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(135deg, #00ffff, #0077ff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+
+      text-shadow:
+        4px 4px 8px rgba(0,0,0,0.9),
+        -4px 4px 8px rgba(0,0,0,0.9),
+        4px -4px 8px rgba(0,0,0,0.9),
+        -4px -4px 8px rgba(0,0,0,0.9),
+        0 0 20px #00ffff;
+
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow:
+          4px 4px 8px rgba(0,0,0,0.9),
+          -4px 4px 8px rgba(0,0,0,0.9),
+          4px -4px 8px rgba(0,0,0,0.9),
+          -4px -4px 8px rgba(0,0,0,0.9),
+          0 0 10px #00ffff,
+          0 0 20px #00ffff;
+      }
+      to {
+        text-shadow:
+          4px 4px 12px rgba(0,0,0,0.8),
+          -4px 4px 12px rgba(0,0,0,0.8),
+          4px -4px 12px rgba(0,0,0,0.8),
+          -4px -4px 12px rgba(0,0,0,0.8),
+          0 0 30px #00ffff,
+          0 0 60px #00ffff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Hello World</h1>
+  </div>
+</body>
+</html>
